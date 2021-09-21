@@ -11,7 +11,7 @@ using namespace std;
 
 int main(){
     double x1, y1, x2, y2, s_Area, c_Area, dia, rad;
-    cout<<"Please input the vale of Coordinates: ";
+    cout<<"Please input the values of Coordinates: ";
     cin>>x1>>y1>>x2>>y2;
 
     dia = sqrt((x1-x2)*(x1-x2)+(y1-y2)*(y1-y2));
