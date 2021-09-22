@@ -1,0 +1,26 @@
+// Bismillah
+#include<iostream>
+using namespace std;
+
+int main(){
+    int n, num, digit, rev = 0;
+
+    cout<<"Please enter a positive nimber: ";
+    cin>>num;
+    n = num;
+    do
+    {
+        digit = num % 10; // finding the total digits of input
+        rev = (rev * 10) + digit;
+        num = num / 10;
+    }while(num != 0);
+
+    cout<<" The reverse of the number is: "<< rev<<endl;
+
+    if(n == rev){
+        cout<<" The number is a plaindrome number.\n";
+    }
+    else{
+        cout<<" The numebr is not a plaindrome. \n";
+    }
+}
